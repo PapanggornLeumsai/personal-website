@@ -181,9 +181,20 @@
     background:var(--bg-card);
   }
   .work-media img{ width:100%; height:100%; object-fit:cover; aspect-ratio:4/3; }
-  .work-media.split{ display:grid; grid-template-columns:1fr 1fr; gap:2px; background:var(--line); }
-  .work-media.split img{ aspect-ratio:3/4; }
-
+  .work-media.split{ 
+    display: flex; 
+    gap: 12px; 
+    background: transparent; 
+    border: none;
+    border-radius: 0;
+  }
+  .work-media.split img{ 
+    width: 50%;
+    aspect-ratio: 4/3; 
+    object-fit: cover;
+    border-radius: var(--radius);
+    border: 1px solid var(--line);
+  }
   .work-copy .status{
     display:inline-block;
     font-family:'Inter', sans-serif;
